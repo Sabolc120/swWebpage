@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Karla:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ccd414cc0a.js" crossorigin="anonymous"></script>
+    <link th:href="@{/styles/style.css?version=4}" rel="stylesheet" />
+    <title>SoulWorker characters</title>
+</head>
+<body>
+<section id="firstImpressionRaids">
+    <div class="container-fluid">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand my-brand-style" href="homePage" >/SW/</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item my-item">
+                        <a class="nav-link" href="characters">Characters</a>
+                    </li>
+                    <li class="nav-item my-item">
+                        <a class="nav-link" href="raids">Raids</a>
+                    </li>
+                    <li class="nav-item my-item">
+                        <a class="nav-link" href="yuukei">Yuukei</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--First part of the raids site, similar to the home page -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Raids showcase of soulworker, ordered by timeline... </h1>
+                <h3>You know an MMORPG is old when there are raids which are too easy</h3>
+            </div>
+            <div class="col-lg-6">
+                <img th:src="@{/images/raids.jpg}">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="raidsList">
+    <div class="container-fluid">
+        <a href="raidsPreview?id=1">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4">
+                <h1>Hidden Hideout</h1>
+                <p>Level 68 raid of the game, and probably almost the most difficult raid in the game, and there are
+                many reasons behind that, mostly bugs.</p>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <h2>Difficulty during early stages: ★★★★★ </h2>
+                <h2>Difficulty during later stages: ★★★ </h2>
+                <h2>Demand of teamwork: ★★★★ </h2>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <img class="img-fluid img-thumbnail rad" th:src="@{/images/hh.jpg}">
+            </div>
+        </div>
+        </a>
+        <hr>
+        <a href="raidsPreview?id=2">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4">
+                    <h1>Violent Sun</h1>
+                    <p>Level 72 raid of the game, no difficult mechanics, this raid is a
+                    damage checking as it has different time limits for each phases.</p>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <h2>Difficulty during early stages: ★★★★ </h2>
+                    <h2>Difficulty during later stages: ★★ </h2>
+                    <h2>Demand of teamwork: ★★★ </h2>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <img class="img-fluid img-thumbnail rad" th:src="@{/images/vs.jpg}">
+                </div>
+            </div>
+        </a>
+        <hr>
+        <a href="raidsPreview?id=3">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4">
+                    <h1>Broken Savior</h1>
+                    <p>Level 76 raid of the game, it has a normal and hard mode. The hard mode is very difficult
+                    due so much little damages, you need to be very careful to keep yourself alive.</p>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <h2>Difficulty during normal stages: ★★★ </h2>
+                    <h2>Difficulty during hard stages: ★★★★★ </h2>
+                    <h2>Demand of teamwork: ★★★★★ </h2>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <img class="img-fluid img-thumbnail rad" th:src="@{/images/bs.jpg}">
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<footer>
+    Yuukei
+</footer>
+</body>
+</html>

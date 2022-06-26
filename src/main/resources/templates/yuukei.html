@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Karla:wght@200&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ccd414cc0a.js" crossorigin="anonymous"></script>
+  <link th:href="@{/styles/style.css}" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Yuukei</title>
+</head>
+<body>
+<section id="firstImpression">
+  <div class="container-fluid">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand my-brand-style" href="homePage" >/SW/</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item my-item">
+            <a class="nav-link" href="characters">Characters</a>
+          </li>
+          <li class="nav-item my-item">
+            <a class="nav-link" href="raids">Raids</a>
+          </li>
+          <li class="nav-item my-item">
+            <a class="nav-link" href="yuukei">Yuukei</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+<section id="yuukeiFirst">
+  <h1>Welcome to yuukei!</h1>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h2 class="slides-text">Anime watching parties</h2>
+        <img class="slides-image" th:src="@{/images/watchParty.png}">
+        <h4>Angel Beats, Yuru Yuri, and a lot other types of anime has been already watched..</h4>
+      </div>
+      <div class="carousel-item">
+        <h2 class="slides-text">Very chill and mature community</h2>
+        <img class="slides-image" th:src="@{/images/chill.png}">
+        <h4>Sometimes food talk, sometimes real life talk, or just playing together..</h4>
+      </div>
+      <div class="carousel-item">
+        <h2 class="slides-text">Not only a guild, more likely a bunch of friends..</h2>
+        <img class="slides-image" th:src="@{/images/friends.jpg}">
+        <h4>We are always helping out each other or support...</h4>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</section>
+<section id="introductionToYuukei">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>What the hell are we playing with??!!</h2>
+      <img th:src="@{/images/playing.png}">
+      <p>We are playing with a game called Soulworker, its an MMORPG Korean game in anime style, it has a lot of negatives...
+      32 bit engine, servers always crashing, too many random numbers in everything. It has a good side too, like for example
+      a lot of gestures, guild option, a lot of character costumes, and ranking system which is very skill heavy, so its good
+      for players who likes challanging theirselves.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col">
+      <h2 class="leftH">Leaders</h2>
+      <img th:src="@{/images/sumimi.jpg}" class="left">
+      <p class="leftP">The one who is created Yuukei is called sumimi, he is the main leader of this guild. He loves teasing everyone
+      and sometimes loves being very lazy, but he has a very serious side too which he always pulls out when its needed, sumimi is a very responsible
+      leader of this guild. He made a lot of guides for the guild, and even a tutorial.</p>
+    </div>
+  </div>
+  <div class="row second">
+    <div class="col">
+      <img th:src="@{/images/rinatsu.jpg}" class="left">
+      <p class="leftP">Second leader of the guild and personally myself, called Rinatsu. I am the mood maker inside the guild, trying
+      to administrate it often, and keeping it together without letting it falling apart as everything needs maintenance time by time
+      sadly I dont have much time nowadays because I need to study so so so much for getting into a job place...</p>
+    </div>
+  </div>
+</div>
+  <hr>
+</section>
+<section id="yuukeiActivities">
+<h1>What are we doing in this guild...? About our activity</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Giveaways!</h2>
+        <img th:src="@{/images/giveaway.jpg}">
+        <p>Yup, you heard it right! Yuukei has monthly giveaways, me and sumi usually gathers around 50.000.000 ingame currency
+        then giving it away for one lucky winner.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <h2 class="leftH2">Helping newbies!</h2>
+        <img class="imgL" th:src="@{/images/help.png}">
+        <p class="leftP">We have a lot of veterans, and even more guides and tutorials. The game not explaining very important things. As every MMORPG, in this too
+        you are going to google a lot without a good guild where people can explain everything.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Yuukei
+  </footer>
+</section>
+</body>
+</html>
