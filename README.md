@@ -4,7 +4,8 @@ Indításhoz szükséges kellékek:
 2. Java, JDK, Maven
 
 Rövid leírás:
--Kellet egy projekt, ezért készítettem egy kissebb bemutatót egy játékról és egy klánról
+1. Kellet egy projekt, ezért készítettem egy kissebb bemutatót egy játékról és egy klánról
+2. FONTOS! Videó a projektről működés közben: https://youtu.be/ev54L5m1Q48
 
 Specifikációk:
 1. Thymleaf használata, templatek használata
@@ -13,5 +14,5 @@ Specifikációk:
 4. Angol nyelv
 
 Szerző megjegyzés:
-1. Weboldalon használt képek nincsneke a tulajdonomban.
+1. Weboldalon használt képek nincsenek a tulajdonomban.
 2. A weboldal nem fog ki kerülni nyílvános webre, csupán gyakorló projekt és önéletrajz material.
